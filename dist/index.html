@@ -34,28 +34,9 @@
             <div class="masthead-content">
                 <div class="container px-5">
                     <h1 class="masthead-heading mb-0">Yentl Stroobants</h1>
-                    <script>
+                   
+                        <h2 class="masthead-subheading mb-0"></h2>
                         
-                        var texts = new Array();
-texts.push("Student Applied Computer Science");
-texts.push("Artificial Intelligence");
-texts.push("Application Development");
-
-var point = 0;
-
-function changeText(){
-  $('h2 class="masthead-subheading mb-0"').html(texts[point]);
-  if(point < texts.length - 1){
-    point ++;
-  }else{
-    point = 0;
-  }
-  setTimeout(changeText, 5000)
-}
-
-changeText();
-                    
-                    </script>
                     <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Download CV</a>
                 </div>
             </div>
@@ -140,5 +121,27 @@ changeText();
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+        var texts = new Array();
+            texts.push("Text1");
+            texts.push("Text2");
+            texts.push("Text3");
+
+        var point = 0;
+
+        function changeText(){
+            $('h2 class="masthead-subheading mb-0"').html(texts[point]);
+            if(point < texts.length - 1){
+                point ++;
+            }else{
+                point = 0;
+            }
+         }
+         changeText();
+         setInterval(changeText, 5000)
+         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </body>
 </html>
+
+
