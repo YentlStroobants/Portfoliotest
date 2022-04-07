@@ -34,7 +34,28 @@
             <div class="masthead-content">
                 <div class="container px-5">
                     <h1 class="masthead-heading mb-0">Yentl Stroobants</h1>
-                    <h2 class="masthead-subheading mb-0">Student Applied Computer Science</h2>
+                    <h2 class="masthead-subheading mb-0">
+                        
+                        var texts = new Array();
+texts.push("Student Applied Computer Science");
+texts.push("Artificial Intelligence");
+texts.push("Application Development");
+
+var point = 0;
+
+function changeText(){
+  $('h3').html(texts[point]);
+  if(point < texts.length - 1){
+    point ++;
+  }else{
+    point = 0;
+  }
+  setTimeout(changeText, 5000)
+}
+
+changeText();
+                    
+                    </h2>
                     <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Download CV</a>
                 </div>
             </div>
